@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'NanumSquareRoundB';
+	src: url('../font/NanumSquareRoundB.ttf') format('truetype');
+}
+body {
+	color: black;
+	font-weight: 900;
+	font-family: NanumSquareRoundB
+}
+
+.container {
+	width: 600px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.btLink {
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+	font-size: 1.4rem
+}
+
+.btLink.btLine {
+	font-weight: 600;
+	color: black;
+	text-decoration: underline
+}
+
+.btnArea {
+	margin-top: 48px;
+	text-align: center;
+	font-size: 0
+}
+
+.btnArea.btnAreaFull {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 -4px
+}
+
+.btnArea.btnAreaFull .btnDefault {
+	width: 100%;
+	min-width: auto;
+	margin: 0 4px
+}
+
+
+.btnArea.btnArea32 {
+	margin-top: 32px
+}
+
+.btnL {
+	min-width: 240px;
+	height: 56px;
+	padding: 0 24px;
+	color: #63a1ff;
+	font-size: 1.8rem;
+	border-radius: 12px;
+	border-color: transparent;
+	line-height: 56px;
+	background: #e6effe
+}
+
+
+.btnM {
+	min-width: 88px;
+	height: 48px;
+	padding: 0 24px;
+	color: #63a1ff;
+	font-size: 1.5rem;
+	border-radius: 8px;
+	line-height: 48px;
+	background: #e6effe
+}
+
+.btnS {
+	min-width: 72px;
+	height: 40px;
+	padding: 0 15px;
+	color: #63a1ff;
+	font-size: 1.3rem;
+	border-radius: 8px;
+	border: 1px solid #EAEAEA;
+	line-height: 33px;
+	background: #e6effe
+}
+
+.btnDefault.action {
+	color: #fff;
+	background: #569aff
+}
+
+.btnDefault.action:hover {
+	background: #2f7bf2
+}
+
+.loginBtns {
+	margin: 18px 0 33px;
+	text-align: center
+}
+
+.loginBtns .btLink+.btLink {
+	margin-left: 24px
+}
+
+.loginBtns .btLink+.btLink:before {
+	top: 7px;
+	left: -12px;
+	width: 1px;
+	height: 16px;
+	background-color: #000000
+}
+
+.loginBtns .colPur {
+	color: #63a1ff
+}
